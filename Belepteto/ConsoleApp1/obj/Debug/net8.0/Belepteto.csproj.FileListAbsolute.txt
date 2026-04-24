@@ -30,3 +30,19 @@ C:\Users\balogh.dominik\Desktop\autok+belepteto\Belepteto\ConsoleApp1\bin\Debug\
 C:\Users\balogh.dominik\Desktop\autok+belepteto\Belepteto\ConsoleApp1\bin\Debug\net8.0\Belepteto.pdb
 C:\Users\balogh.dominik\Desktop\autok+belepteto\Belepteto\ConsoleApp1\obj\Debug\net8.0\Belepteto.genruntimeconfig.cache
 C:\Users\balogh.dominik\Desktop\autok+belepteto\Belepteto\ConsoleApp1\obj\Debug\net8.0\ref\Belepteto.dll
+D:\Mechwart\C# 11\autok-belepteto\Belepteto\ConsoleApp1\bin\Debug\net8.0\Belepteto.exe
+D:\Mechwart\C# 11\autok-belepteto\Belepteto\ConsoleApp1\bin\Debug\net8.0\bedat.txt
+D:\Mechwart\C# 11\autok-belepteto\Belepteto\ConsoleApp1\bin\Debug\net8.0\Belepteto.deps.json
+D:\Mechwart\C# 11\autok-belepteto\Belepteto\ConsoleApp1\bin\Debug\net8.0\Belepteto.runtimeconfig.json
+D:\Mechwart\C# 11\autok-belepteto\Belepteto\ConsoleApp1\bin\Debug\net8.0\Belepteto.dll
+D:\Mechwart\C# 11\autok-belepteto\Belepteto\ConsoleApp1\bin\Debug\net8.0\Belepteto.pdb
+D:\Mechwart\C# 11\autok-belepteto\Belepteto\ConsoleApp1\obj\Debug\net8.0\Belepteto.GeneratedMSBuildEditorConfig.editorconfig
+D:\Mechwart\C# 11\autok-belepteto\Belepteto\ConsoleApp1\obj\Debug\net8.0\Belepteto.AssemblyInfoInputs.cache
+D:\Mechwart\C# 11\autok-belepteto\Belepteto\ConsoleApp1\obj\Debug\net8.0\Belepteto.AssemblyInfo.cs
+D:\Mechwart\C# 11\autok-belepteto\Belepteto\ConsoleApp1\obj\Debug\net8.0\Belepteto.csproj.CoreCompileInputs.cache
+D:\Mechwart\C# 11\autok-belepteto\Belepteto\ConsoleApp1\obj\Debug\net8.0\Belepteto.sourcelink.json
+D:\Mechwart\C# 11\autok-belepteto\Belepteto\ConsoleApp1\obj\Debug\net8.0\Belepteto.dll
+D:\Mechwart\C# 11\autok-belepteto\Belepteto\ConsoleApp1\obj\Debug\net8.0\refint\Belepteto.dll
+D:\Mechwart\C# 11\autok-belepteto\Belepteto\ConsoleApp1\obj\Debug\net8.0\Belepteto.pdb
+D:\Mechwart\C# 11\autok-belepteto\Belepteto\ConsoleApp1\obj\Debug\net8.0\Belepteto.genruntimeconfig.cache
+D:\Mechwart\C# 11\autok-belepteto\Belepteto\ConsoleApp1\obj\Debug\net8.0\ref\Belepteto.dll

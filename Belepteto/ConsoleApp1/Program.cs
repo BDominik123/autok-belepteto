@@ -10,12 +10,17 @@ namespace Belepteto
             Console.WriteLine("2. feladat");
             LeghamarabbBelepett(adatok);
             LegkesobbElhagyta(adatok);
-            List<string> kesok = Kesok(adatok);
+            Kesok(adatok);
             Console.WriteLine("4. feladat");
             int menzasok = Menzasok(adatok);
             Console.WriteLine($"A menzán aznap {menzasok} tanuló ebédelt");
             Console.WriteLine("5. feladat");
             Konyvtar(adatok, menzasok);
+            Console.WriteLine("6. feladat");
+            Console.WriteLine("Az érintett tanulók:");
+            Kilepett(adatok);
+            Console.WriteLine("7. feladat");
+            ErkezesTavozasIdotartam(adatok);
         }
 
         static List<string> Beolvasas(string fajl)
@@ -61,20 +66,20 @@ namespace Belepteto
 
         }
 
-        static List<string> Kesok(List<string> adatok)
+        static void Kesok(List<string> adatok)
         {
-            List<string> kesok = new List<string>();
+            StreamWriter sw = new StreamWriter("kesok.txt");
             for (int i = 0; i < adatok.Count; i++)
             {
                 if (adatok[i].Split(' ')[2] == "1")
                 {
                     if (TimeOnly.Parse(adatok[i].Split(' ')[1]) > TimeOnly.Parse("07:50"))
                     {
-                        kesok.Add(adatok[i]);
+                        sw.WriteLine(adatok[i]);
                     }
                 }
             }
-            return kesok;
+            sw.Close();
         }
         static int Menzasok(List<string> adatok)
         {
@@ -116,19 +121,57 @@ namespace Belepteto
         }
         static void Kilepett(List<string> adatok)
         {
-            List<string> kilepett = new List<string>();
+            HashSet<string> belepettSzunetElott = new HashSet<string>();
+            HashSet<string> belepettSzunetUtan = new HashSet<string>();
+
             for (int i = 0; i < adatok.Count; i++)
             {
-                if (adatok[i].Split(' ')[2] == "1" && TimeOnly.Parse(adatok[i].Split(' ')[1]) < TimeOnly.Parse("10:45") )
+                var split = adatok[i].Split(" ");
+                string nev = split[0];
+                TimeOnly ido = TimeOnly.Parse(split[1]);
+                string szam = split[2];
+                if (szam == "1" && ido < TimeOnly.Parse("10:45"))
                 {
-                    kilepett.Add(adatok[i]);
+                    belepettSzunetElott.Add(nev);
+                }
+                
+                if(belepettSzunetElott.Contains(nev) && TimeOnly.Parse("10:50") > ido && szam == "2") belepettSzunetElott.Remove(nev);
+
+                if (szam == "1" && ido > TimeOnly.Parse("10:50") && ido<TimeOnly.Parse("11:00"))
+                {
+                    belepettSzunetUtan.Add(nev);
                 }
             }
 
-            for(int i = 0; i < kilepett.Count; i++)
+            belepettSzunetElott.IntersectWith(belepettSzunetUtan);
+
+            foreach (string item in belepettSzunetElott)
             {
-                Console.WriteLine(kilepett[i]);
+                Console.WriteLine(item);
             }
         }
+
+        static void ErkezesTavozasIdotartam(List<string> adatok)
+        {
+            List<string> orderedByReverseTime = adatok.OrderByDescending(x => x.Split(' ')[1]).ToList();
+            Console.WriteLine("Egy tanuló azonosítója: ");
+            string id = Console.ReadLine();
+            var erkezesSor = adatok.Find(x => x.Contains(id));
+            if (erkezesSor == null)
+            {
+                Console.WriteLine("Ilyen azonosítójú tanuló aznap nem volt az iskolában.");
+            }
+            else
+            {
+                TimeOnly erkezes = TimeOnly.Parse(erkezesSor.Split(' ')[1]);
+                var tavozasSor = orderedByReverseTime.Find(x => x.Contains(id));
+                TimeOnly tavozas = TimeOnly.Parse(tavozasSor.Split(' ')[1]);
+                TimeSpan idotartam = tavozas.ToTimeSpan() - erkezes.ToTimeSpan();
+                Console.WriteLine($"A tanuló érkezése és távozása között {Math.Round(idotartam.TotalHours)} óra {idotartam.TotalMinutes%60} perc telt el.");
+            }
+        }
+
+
+
     }
 }

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Belepteto")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7638bf111594d5827a9791bfab1ecebb203d510e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+65c0db3cf1483e23317b0b41eef03cca8672daee")]
 [assembly: System.Reflection.AssemblyProductAttribute("Belepteto")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Belepteto")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

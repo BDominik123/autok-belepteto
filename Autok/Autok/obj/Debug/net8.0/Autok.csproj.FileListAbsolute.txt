@@ -1,0 +1,17 @@
+D:\Mechwart\C# 11\autok-belepteto\Autok\Autok\bin\Debug\net8.0\Autok.exe
+D:\Mechwart\C# 11\autok-belepteto\Autok\Autok\bin\Debug\net8.0\jeladas.txt
+D:\Mechwart\C# 11\autok-belepteto\Autok\Autok\bin\Debug\net8.0\Autok.deps.json
+D:\Mechwart\C# 11\autok-belepteto\Autok\Autok\bin\Debug\net8.0\Autok.runtimeconfig.json
+D:\Mechwart\C# 11\autok-belepteto\Autok\Autok\bin\Debug\net8.0\Autok.dll
+D:\Mechwart\C# 11\autok-belepteto\Autok\Autok\bin\Debug\net8.0\Autok.pdb
+D:\Mechwart\C# 11\autok-belepteto\Autok\Autok\obj\Debug\net8.0\Autok.GeneratedMSBuildEditorConfig.editorconfig
+D:\Mechwart\C# 11\autok-belepteto\Autok\Autok\obj\Debug\net8.0\Autok.AssemblyInfoInputs.cache
+D:\Mechwart\C# 11\autok-belepteto\Autok\Autok\obj\Debug\net8.0\Autok.AssemblyInfo.cs
+D:\Mechwart\C# 11\autok-belepteto\Autok\Autok\obj\Debug\net8.0\Autok.csproj.CoreCompileInputs.cache
+D:\Mechwart\C# 11\autok-belepteto\Autok\Autok\obj\Debug\net8.0\Autok.sourcelink.json
+D:\Mechwart\C# 11\autok-belepteto\Autok\Autok\obj\Debug\net8.0\Autok.dll
+D:\Mechwart\C# 11\autok-belepteto\Autok\Autok\obj\Debug\net8.0\refint\Autok.dll
+D:\Mechwart\C# 11\autok-belepteto\Autok\Autok\obj\Debug\net8.0\Autok.pdb
+D:\Mechwart\C# 11\autok-belepteto\Autok\Autok\obj\Debug\net8.0\Autok.genruntimeconfig.cache
+D:\Mechwart\C# 11\autok-belepteto\Autok\Autok\obj\Debug\net8.0\ref\Autok.dll
+D:\Mechwart\C# 11\autok-belepteto\Autok\Autok\bin\Debug\net8.0\ido.txt
